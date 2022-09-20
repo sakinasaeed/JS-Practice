@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="doc"></p>
+    <script>
+        let car={
+            brand : 'mehran',
+            color:'red',
+        }
+        console.log(car.brand) //
+        console.log (car['color']);
+
+        // document.getElementById('doc').innerHTML=car.brand;       method1
+        // document.getElementById('doc').innerHTML=car['brand'];  method 2
+        document.getElementById('doc').innerHTML=`My Car Brand is ${car.brand} and its color is ${car.color}`;
+
+    </script>
+</body>
+</html>
