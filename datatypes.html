@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Data Types</title>
+</head>
+<body>
+    <p id="doc"> the user</p>
+    <p id="app"></p>
+    <p id="app1"></p>
+    <script>
+//data types
+
+//primitve values & non-primitie r objects
+
+// types -- 7 
+//string  -- series of characters
+//Numbers 
+//Booleans -- true & false
+//undefined
+//null
+//bigInt
+let x= "Nadya";
+y= 'Sakina';
+age =20;
+z= "Nadya";
+let hobby='';
+let reading;
+console.log(` ${x} and ${y} are good friends. and sakina's age is ${age}`);
+console.log(typeof x)
+console.log(x==y);        //false
+console.log(x==z);           //true
+console.log(hobby);
+console.log(reading);
+let car = BigInt(357)
+car1=BigInt(3);
+price= car + car1;
+
+console.log(car + car1);
+console.log(price);
+
+
+document.getElementById('doc').innerHTML=(` ${x} and ${y} are good friends.. and sakina's age is ${age}`);
+document.getElementById('app').innerHTML= reading + ' ' +  x + ' The legend';
+document.getElementById('app1').innerHTML=price;
+    </script>
+</body>
+</html>
